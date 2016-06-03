@@ -1,5 +1,19 @@
 var Peer = window.SimplePeer;
-var p = new Peer({ initiator: location.hash === '#1', trickle: false })
+//var p = new Peer({ initiator: location.hash === '#1', trickle: false })
+
+var p = new Peer(
+{
+  initiator: location.hash === '#1',
+  channelConfig: {},
+  channelName: '<random string>',
+  config: { iceServers: [ { url: 'stun:23.21.150.121' } ] },
+  constraints: {},
+  reconnectTimer: false,
+  sdpTransform: function (sdp) { return sdp },
+  stream: false,
+  trickle: true,
+  wrtc: {} // RTCPeerConnection/RTCSessionDescription/RTCIceCandidate
+});
 
 p.on('error', function (err) { console.log('error', err) })
 
