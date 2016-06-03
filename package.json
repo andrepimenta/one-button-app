@@ -1,0 +1,21 @@
+{
+  "name": "default-one-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://andre_pimenta@bitbucket.org/andre_pimenta/default-one-file.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/andre_pimenta/default-one-file#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "simple-peer": "^6.0.4",
+    "socket.io": "^1.4.6"
+  }
+}
