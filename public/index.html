@@ -1,16 +1,30 @@
 <html>
+	    <script src="qrcode.min.js"></script>
   <body>
     <style>
       #outgoing {
         width: 600px;
         word-wrap: break-word;
       }
+      
+    img {
+		margin:auto
+	}
+      
     </style>
-    <form>
+    <!--<form>
       <textarea id="incoming"></textarea>
       <button type="submit">submit</button>
     </form>
-    <pre id="outgoing"></pre>
+    -->
+    
+    <div style="width:100%;text-align:center;padding-top:100px; padding-bottom:100px">
+		<h1 style="color:grey">Use the One Button App on your phone to scan the code</h1>
+    </div>
+    
+   
+		<div style="width:100%;text-align:center" id="qrcode"></div>
+
     <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
     <script src="bundle.js"></script>
   </body>

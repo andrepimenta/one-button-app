@@ -1,5 +1,5 @@
 var peer = new Peer({key: 'umreiafrr9wo2yb9'});
-
+/*
 document.querySelector('form').addEventListener('submit', function (ev) {
 	ev.preventDefault()
 
@@ -7,9 +7,10 @@ document.querySelector('form').addEventListener('submit', function (ev) {
 	conn.on('open', function(){
 		conn.send([{type: 'url', url: 'http://www.google.pt'}, {type: 'url', url: 'http://www.facebook.com'}]);
 	});
-})
+})*/
 
 peer.on('open', function(id) {
+	new QRCode(document.getElementById("qrcode"), id);
   console.log('My peer ID is: ' + id);
 });
 
